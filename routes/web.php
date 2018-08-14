@@ -18,5 +18,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-//Route::post('post','HomeController@store');
 Route::delete('/eliminar/{id}','HomeController@destroy')->name('destroy');

@@ -132,30 +132,8 @@
     {{--Fin Modal--}}
 </div>
 @endsection
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-{{--<script type="text/javascript">
-    $('#insert').click(function(){
-        $.ajax({
-            type:'post',
-            url:'home',
-            data:{
-                '_token':$('input[name = _token]').val(),
-                'name':$('input[name = name]').val(),
-                'documento':$('input[name = documento]').val(),
-                'telefono':$('input[name = telefono]').val(),
-                'direccion':$('input[name = direccion]').val(),
-                'genero':$('input[name = genero]').val(),
-                'fecha':$('input[name = fecha]').val(),
-                'email':$('input[name = email]').val(),
-                'password':$('input[name = password]').val(),
-            },
-            success:function(data){
-                window.location.reload();
-            },
-        });
-    });
-</script>--}}
 @section('script')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="{{asset('js/delete.js')}}"></script>
 @endsection
 
